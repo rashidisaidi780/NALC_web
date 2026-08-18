@@ -14,9 +14,7 @@ export function Footer({ onNavigate }: FooterProps) {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-1">
-            <div className="rounded-lg bg-white px-3 py-2.5 inline-block">
-              <Logo />
-            </div>
+            <Logo />
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Auctioneers, court brokers, logistics, cleaning, forwarding, and commission services delivered with integrity and professionalism.
             </p>
