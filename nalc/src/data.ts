@@ -203,7 +203,7 @@ export const charges: ChargeRow[] = [
   { service: 'Normal debt collection (tsh. 100,000,000 million and above)', commission: '7%', notes: 'Professional fees and adverting' },
   { service: 'Auctioneering of mortgaged properties (tsh, 10,000,000 million-100,000,000 million)', commission: '10%', notes: 'Professional fees and adverting' },
   { service: 'Auctioneering of mortgages properties(tsh 10,000,000  million and above)', commission: '7%', notes: 'Professional fees and adverting' },
-  { service: 'Repossession of vehicles and machinery (below 1₀ tones)', commission: 'Nil', notes: 'Search fees and towing charges per km(subject to negotiation)' },
-  { service: 'Repossession of vehicle and machinery (above 1₀ tones)', commission: 'Nil', notes: 'Search fees and towing charges per km (subject to negotiation)' },
+  { service: 'Repossession of vehicles and machinery (below 10 tones)', commission: 'Nil', notes: 'Search fees and towing charges per km(subject to negotiation)' },
+  { service: 'Repossession of vehicle and machinery (above 10 tones)', commission: 'Nil', notes: 'Search fees and towing charges per km (subject to negotiation)' },
   { service: 'Auctioneering of repossessed vehicle and other item ', commission: '10%', notes: 'Storage charge per day (to be deducted from auctionproceed)' },
 ];

@@ -6,7 +6,7 @@ export function TeamPage() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <section className="bg-slate-950 pt-32 pb-20 sm:pt-40 sm:pb-28">
+      <section className="bg-blue-950 pt-32 pb-20 sm:pt-40 sm:pb-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="inline-block animate-fade-up rounded-full bg-blue-500/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-blue-300">

@@ -1,4 +1,4 @@
-import logoImage from './assets/nalc_logo.png';
+import logoImage from './assets/nalc_logo.jpeg';
 
 export function Logo({ className = '' }: { className?: string }) {
   return (

@@ -11,7 +11,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-slate-950 pt-28 pb-20 sm:pt-36 sm:pb-28">
+      <section className="relative overflow-hidden bg-blue-950 pt-28 pb-20 sm:pt-36 sm:pb-28">
         <div className="absolute inset-0">
           <img
             src="https://images.pexels.com/photos/37320179/pexels-photo-37320179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
@@ -147,7 +147,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Objectives strip */}
-      <section className="bg-slate-950 py-20 sm:py-24">
+      <section className="bg-blue-950 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             dark
