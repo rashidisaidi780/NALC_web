@@ -61,13 +61,13 @@ export function Footer({ onNavigate }: FooterProps) {
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-400" />
                 <span>P.O. Box 1172, Tabora, Tanzania</span>
               </li>
-              <li className="flex items-center gap-2.5">
+              <li className="flex items-start gap-2.5">
                 <Phone className="h-4 w-4 flex-shrink-0 text-blue-400" />
-                <span>+255 52 492 227 / +255 769 895 396</span>
+                <span className="break-words">+255 52 492 227 / +255 769 895 396</span>
               </li>
-              <li className="flex items-center gap-2.5">
+              <li className="flex items-start gap-2.5">
                 <Mail className="h-4 w-4 flex-shrink-0 text-blue-400" />
-                <span>nalcenterprises@yahoo.com</span>
+                <span className="break-all">nalcenterprises@yahoo.com</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-400" />

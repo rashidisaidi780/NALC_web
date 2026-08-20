@@ -6,7 +6,7 @@ export function Logo({ className = '' }: { className?: string }) {
       <img 
         src={logoImage} 
         alt="NALC Enterprises Logo" 
-        className="h-12 w-auto"
+        className="h-10 w-auto sm:h-12"
       />
     </div>
   );

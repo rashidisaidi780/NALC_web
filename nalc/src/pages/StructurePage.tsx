@@ -13,8 +13,8 @@ export function StructurePage() {
   };
 
   const Card = ({ node }: { node: (typeof orgStructure)[number] }) => (
-    <div className="w-48 rounded-lg border-2 border-white bg-blue-700 px-4 py-5 text-center text-white shadow-lg">
-      <div className="text-sm font-bold uppercase tracking-wide">{node.title}</div>
+    <div className="w-full max-w-52 rounded-lg border-2 border-white bg-blue-700 px-3 py-4 text-center text-white shadow-lg sm:px-4 sm:py-5 md:w-48">
+      <div className="text-xs font-bold uppercase tracking-wide sm:text-sm">{node.title}</div>
       <div className="mt-1 text-xs opacity-90">{node.name}</div>
     </div>
   );
@@ -47,7 +47,7 @@ export function StructurePage() {
             subtitle="From the Director General down to each operational team."
           />
 
-          <div className="mt-20 flex flex-col items-center gap-12">
+          <div className="mt-14 hidden flex-col items-center gap-12 md:mt-20 md:flex">
             {/* Level 0: Director General */}
             <div className="flex justify-center">
               {org.dg && <Card node={org.dg} />}
@@ -120,6 +120,48 @@ export function StructurePage() {
                 <div key={node.id}>
                   <Card node={node} />
                 </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-14 flex flex-col items-center md:hidden">
+            <div className="flex w-full max-w-52 flex-col items-center">
+              {org.dg && <Card node={org.dg} />}
+              <div className="h-8 w-0.5 bg-blue-700" />
+            </div>
+
+            <div className="flex w-full max-w-2xl flex-col items-center gap-4">
+              <div className="grid w-full gap-4 sm:grid-cols-2">
+                {([org.ps, org.gm].filter(Boolean) as (typeof orgStructure)[number][]).map((node) => (
+                  <Card key={node.id} node={node} />
+                ))}
+              </div>
+              <div className="h-8 w-0.5 bg-blue-700" />
+            </div>
+
+            <div className="flex w-full flex-col items-center gap-4">
+              {org.managers.map((node, index) => (
+                <div key={node.id} className="flex w-full flex-col items-center gap-4">
+                  <Card node={node} />
+                  {index < org.managers.length - 1 && <div className="h-6 w-0.5 bg-blue-700" />}
+                </div>
+              ))}
+              <div className="h-8 w-0.5 bg-blue-700" />
+            </div>
+
+            <div className="flex w-full flex-col items-center gap-4">
+              {org.assistants.map((node, index) => (
+                <div key={node.id} className="flex w-full flex-col items-center gap-4">
+                  <Card node={node} />
+                  {index < org.assistants.length - 1 && <div className="h-6 w-0.5 bg-blue-700" />}
+                </div>
+              ))}
+              <div className="h-8 w-0.5 bg-blue-700" />
+            </div>
+
+            <div className="grid w-full gap-4 sm:grid-cols-2">
+              {org.support.map((node) => (
+                <Card key={node.id} node={node} />
               ))}
             </div>
           </div>
