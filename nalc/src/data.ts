@@ -134,6 +134,50 @@ export const coreValues: Pillar[] = [
   { id: 'cv-5', title: 'Quality Service', body: 'We are committed to delivering exceptional service that exceeds our clients\' expectations.' },
 ];
 
+export type FieldExperienceRow = {
+  id: string;
+  customer: string;
+  service: string;
+  contractValue: string;
+  status: string;
+};
+
+export const fieldExperience: FieldExperienceRow[] = [
+  {
+    id: 'fe-1',
+    customer: 'CRDB BANK',
+    service: 'Auctioneering',
+    contractValue: 'unlimited',
+    status: 'Ongoing',
+  },
+  {
+    id: 'fe-2',
+    customer: 'NMB BANK',
+    service: 'Debt collection, auctioneering, and recovery consultancy',
+    contractValue: 'unlimited',
+    status: 'Ongoing',
+  },
+  {
+    id: 'fe-3',
+    customer: 'SELCOM MICROFINANCE BANK',
+    service: 'debt collection, auctioneering, and repossession',
+    contractValue: 'unlimited',
+    status: 'Ongoing',
+  
+  },
+  {
+    id: 'fe-4',
+    customer: 'FIN TANZANIA',
+    service: 'Debt collection, auctioneering, and recovery consultancy',
+    contractValue: 'unlimited',
+    status: 'Ongoing',
+  
+  },
+];
+
+export const futureDirection =
+  'NALC Enterprises We expect to see NALC growing fast like tiger move, with the higher competitive ability, to serve clients needs within the country\'s border and beyond by closely working with different clients such as individuals, financial institutions, private and government organizations. We are planning to use modern techniques that will multiply company\'s resources to fulfil customer demands. The development of enterprise should build the bond with the community by creating job opportunities that will nourish community economic development.';
+
 export type OrgNode = {
   id: string;
   title: string;

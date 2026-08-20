@@ -1,5 +1,5 @@
-import { Target, Eye, Flag, Heart, CheckCircle2 } from 'lucide-react';
-import { mission, vision, objectives, coreValues } from '@/data';
+import { Target, Eye, Flag, Heart, CheckCircle2, BriefcaseBusiness, Compass } from 'lucide-react';
+import { mission, vision, objectives, coreValues, fieldExperience, futureDirection } from '@/data';
 import { SectionHeading } from '@/components/SectionHeading';
 
 export function AboutPage() {
@@ -89,6 +89,69 @@ export function AboutPage() {
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">{value.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Field experience */}
+      <section className="bg-slate-50 py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Our Track Record"
+            title="Field Experience"
+            subtitle="Selected areas of work demonstrating our practical experience across core service lines."
+          />
+          <div className="mt-14 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <div className="overflow-x-auto">
+              <table className="min-w-[700px] w-full text-left text-sm">
+                <thead className="bg-blue-950 text-xs uppercase tracking-wider text-white">
+                  <tr>
+                    <th className="px-5 py-4 font-bold">Customer</th>
+                    <th className="px-5 py-4 font-bold">Services Provided</th>
+                    <th className="px-5 py-4 font-bold">Contract Value</th>
+                    <th className="px-5 py-4 font-bold">Status</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {fieldExperience.map((entry) => (
+                    <tr key={entry.id} className="transition-colors hover:bg-blue-50/50">
+                      <td className="px-5 py-5 font-semibold text-slate-900">{entry.customer}</td>
+                      <td className="px-5 py-5 text-slate-600">{entry.service}</td>
+                      <td className="px-5 py-5 text-slate-600">{entry.contractValue}</td>
+                      <td className="px-5 py-5">
+                        <span
+                          className={`inline-flex rounded-full px-3 py-1 text-xs font-bold ${
+                            entry.status === 'Completed'
+                              ? 'bg-green-50 text-green-700'
+                              : 'bg-blue-50 text-blue-700'
+                          }`}
+                        >
+                          {entry.status}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Future direction */}
+      <section className="bg-blue-950 py-20 sm:py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-blue-800 bg-blue-900/50 p-8 shadow-xl sm:p-12">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500 text-white">
+              <Compass className="h-6 w-6" />
+            </div>
+            <p className="mt-5 text-xs font-bold uppercase tracking-wider text-blue-300">Looking Ahead</p>
+            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">NALC in the Future</h2>
+            <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate-300">{futureDirection}</p>
+            <div className="mt-8 flex items-center gap-3 text-sm font-semibold text-blue-200">
+              <BriefcaseBusiness className="h-5 w-5 text-blue-400" />
+              Growing with purpose and accountability
+            </div>
           </div>
         </div>
       </section>
