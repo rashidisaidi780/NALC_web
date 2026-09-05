@@ -104,7 +104,7 @@ export function ChargesPage() {
               <div>
                 <h3 className="text-sm font-bold text-slate-900">Good to Know</h3>
                 <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                  All percentage-based charges are calculated on the final transaction value. Minimum fees may apply for smaller engagements. Rates are reviewed periodically.
+                  All percentage based charges are calculated on the final transaction value. Minimum fees may apply for smaller engagements. Rates are reviewed periodically.
                 </p>
               </div>
             </div>

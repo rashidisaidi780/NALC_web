@@ -1,3 +1,6 @@
+import michaelImage from './components/assets/michaelkafimbi.jpeg'
+import johnImage from './components/assets/johnkafimbi.jpeg'
+
 export type Service = {
   id: string;
   title: string;
@@ -16,7 +19,7 @@ export const services: Service[] = [
       'https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     features: [
       'Public & private auctions',
-      'Court-ordered asset sales',
+      'Court ordered asset sales',
       'Valuation & appraisal',
       'Competitive bidding process',
     ],
@@ -39,7 +42,7 @@ export const services: Service[] = [
     id: 'logistics',
     title: 'Logistics',
     description:
-      'End-to-end logistics solutions covering transport, warehousing, and distribution, engineered to move your goods efficiently across the region.',
+      'End to end logistics solutions covering transport, warehousing, and distribution, engineered to move your goods efficiently across the region.',
     image:
       'https://images.pexels.com/photos/27732803/pexels-photo-27732803.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     features: [
@@ -214,7 +217,7 @@ export const team: TeamMember[] = [
     role: 'DIRECTOR GENERAL',
     bio: 'He is a Tanzania by birth founder and the managing director of the company (MD) He has been director since the incorporation of company. Mr.Michael is the one who carrying the vision of the company. In his current role, general supervising and managing company assets and resources. He has gained a reputation for improving operational efficiency and maximizing growth by ensuring that everyone within NALC\'s team knows how important their role is to the company\'s overall success. He working hard to ensure the dram of NALC became into really practical life. He desires to transform the Tanzanian society, especially the youth in the country, through creating job opportunity. He holds experience of debt collector and auctioneer more than five years working with different companies; In 2017 up to 2020 Mr.Michael Kafimbi served as Debt collector & Auctioneer at Dolphin General Business Enterprises Co Ltd, where he did best with full knowledge. In 2020 up 2021 he served as Zone Operational Manager at Masahaju Auction Mart.',
     image:
-      '',
+      michaelImage,
   },
   {
     id: 'tm-2',
@@ -222,7 +225,7 @@ export const team: TeamMember[] = [
     role: 'GENERAL MANAGER',
     bio: 'He studied at the University of Dodoma and graduated with a Bachelor Degree of Tourism and cultural heritage in 2020. He is a Co-Founder ofthe Company and Legal Protection and Life Improvement of Organization. Mr.Kalungwana currently the Company\'s General Manager, responsible ensure all daily company operational are meet. He also holds certificate of competence of court blocker from Institute of Judicial Admiration Lushoto Heisself-motivated learned professional, eager to learn and develop, is a hard worker, cooperative and can work under minimum supervision to pursue a common goal. He is running with the vision of NALC to ensure the dream come into practical life.',
     image:
-      '',
+      johnImage,
   },
   {
     id: 'tm-3',
@@ -230,7 +233,7 @@ export const team: TeamMember[] = [
     role: 'Chief Finance Officer',
     bio: 'He is a qualified chartered accountant with extensive experience in finance and accounting. He has been instrumental in establishing robust financial systems and processes within the company. His expertise in debt recovery and commission agency operations has significantly contributed to the company\'s financial performance.',
     image:
-      '',
+        '',
   },
 ];
 

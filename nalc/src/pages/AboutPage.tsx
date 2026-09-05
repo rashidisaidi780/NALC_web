@@ -162,7 +162,7 @@ export function AboutPage() {
           <div className="grid grid-cols-2 gap-8 text-center lg:grid-cols-4">
             {[
               { value: '4+', label: 'Years of Experience' },
-              { value: '6', label: 'Service Lines' },
+              { value: '6+', label: 'Service Lines' },
               { value: '500+', label: 'Auctions Conducted' },
               { value: '99%', label: 'Compliance Record' },
             ].map((stat, i) => (
